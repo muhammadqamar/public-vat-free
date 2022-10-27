@@ -1,0 +1,57 @@
+.vat__section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 32px 0;
+
+  .vat_main_container {
+    width: 100%;
+    height: 908px;
+    // background: #cee8fe;
+
+    background-image: url("../images/vat-hero-bg-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    .vat_hero_content {
+      width: 577px;
+      margin: 191px 0 0 88px;
+
+      .hero_heading {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        letter-spacing: 0.01em;
+        color: #2f4858;
+        margin-bottom: 32px;
+      }
+
+      .hero_text {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: -0.01em;
+        color: #2f4858;
+      }
+    }
+
+    // vat logo
+    .vat_free_img {
+      width: 210.38px;
+      height: auto;
+      position: relative;
+      z-index: 1;
+      margin: 52px 0 0 64px;
+    }
+
+    // arrow
+    .hero_arrow_img {
+      width: 759px;
+      height: 521.03px;
+      position: absolute;
+      top: 35px;
+      left: 249px;
+    }
+  }
+}
