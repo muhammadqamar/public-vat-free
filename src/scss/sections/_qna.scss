@@ -1,78 +1,99 @@
 @use "../functions" as *;
 
-.section--qna {
-  .section__title {
-    font-size: fluid-size(24px, 40px, 1440);
-    margin-bottom: 1.5em;
-    font-weight: 400;
+.faq_bg_color {
+  max-width: 1376px;
+  margin: 0 auto 252px;
+  padding: 79px 56px 51px;
+  background-color: #cee8fe;
+
+  @media (max-width: 768px) {
+    padding: 50px 24px;
   }
 
-  .qna {
-    + .qna {
-      margin-top: 1rem;
+  .section--qna {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 40px;
+
+    .section__title {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: 0.01em;
+      color: rgba(47, 72, 88, 0.8);
+      margin-bottom: 24px;
     }
 
-    &__header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1em;
-      cursor: pointer;
-      padding: 0.875rem 1.25rem;
-      background-color: var(--off-white);
-      border-radius: 0.5rem;
-      transition: background-color 0.2s ease;
-
-      &:hover {
-        background-color: transparent;
+    .qna {
+      + .qna {
+        margin-top: 24px;
       }
 
-      &::-webkit-details-marker {
-        display: none;
-      }
-    }
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        cursor: pointer;
+        padding: 7px 14px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        transition: background-color 0.2s ease;
 
-    &__title {
-      font-size: 1rem;
-      font-weight: 600;
+        // &:hover {
+        //   background-color: transparent;
+        // }
 
-      &-icon {
-        flex: 0 0 1.25rem;
-        width: 1.25rem;
-        height: auto;
-      }
-    }
-
-    &__content {
-      padding: 1.5rem;
-      line-height: 1.75;
-      font-size: 0.875rem;
-
-      p + p {
-        margin-top: 1em;
-      }
-
-      ul {
-        padding-left: 1.25em;
-      }
-
-      li + li {
-        margin-top: 0.5em;
-      }
-
-      a {
-        font-weight: 700;
-
-        &:hover {
-          text-decoration: underline 2px var(--brand);
+        &::-webkit-details-marker {
+          display: none;
         }
       }
-    }
 
-    &[open] {
-      .qna__title {
+      &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        color: #2f4858;
+
         &-icon {
-          transform: scaleY(-1);
+          flex: 0 0 1.25rem;
+          width: 1.25rem;
+          height: auto;
+        }
+      }
+
+      &__content {
+        padding: 1.5rem;
+        line-height: 1.75;
+        font-size: 0.875rem;
+
+        p + p {
+          margin-top: 1em;
+        }
+
+        ul {
+          padding-left: 1.25em;
+        }
+
+        li + li {
+          margin-top: 0.5em;
+        }
+
+        a {
+          font-weight: 700;
+
+          &:hover {
+            text-decoration: underline 2px var(--brand);
+          }
+        }
+      }
+
+      &[open] {
+        .qna__title {
+          &-icon {
+            transform: scaleY(-1);
+          }
         }
       }
     }

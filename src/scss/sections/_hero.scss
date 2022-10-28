@@ -1,7 +1,21 @@
+.main_bg_color {
+  width: 100%;
+  background: #f7f7f7;
+}
+
+.main_section {
+  @media (max-width: 768px) {
+    padding: 0 24px;
+  }
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+}
+
 .vat__section {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 50px 32px 0;
+  padding: 50px 0 0;
 
   .vat_main_container {
     width: 100%;
@@ -10,13 +24,32 @@
 
     background-image: url("../images/vat-hero-bg-img.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-size: cover;
     position: relative;
+
+    @media (min-width: 999px) and (max-width: 1180px) {
+      background-position: bottom;
+    }
+
+    @media (max-width: 999px) {
+      background-image: none;
+      background: #cee8fe;
+      padding-right: 24px;
+    }
 
     .vat_hero_content {
       width: 577px;
       margin: 191px 0 0 88px;
+
+      @media (min-width: 992px) and (max-width: 1280px) {
+        margin: 191px 0 0 40px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 191px 0 0 24px;
+      }
 
       .hero_heading {
         font-weight: 700;
@@ -25,6 +58,11 @@
         letter-spacing: 0.01em;
         color: #2f4858;
         margin-bottom: 32px;
+
+        @media (max-width: 768px) {
+          font-size: 38px;
+          line-height: 36px;
+        }
       }
 
       .hero_text {
@@ -33,6 +71,11 @@
         line-height: 60px;
         letter-spacing: -0.01em;
         color: #2f4858;
+
+        @media (max-width: 768px) {
+          font-size: 38px;
+          line-height: 50px;
+        }
       }
     }
 
@@ -43,6 +86,10 @@
       position: relative;
       z-index: 1;
       margin: 52px 0 0 64px;
+
+      @media (max-width: 768px) {
+        margin: 52px 0 0 24px;
+      }
     }
 
     // arrow
@@ -52,6 +99,21 @@
       position: absolute;
       top: 35px;
       left: 249px;
+      display: block;
+
+      @media (max-width: 999px) {
+        display: none;
+      }
+
+      @media (min-width: 1280px) and (max-width: 1400px) {
+        width: 660px;
+      }
+      @media (min-width: 1180px) and (max-width: 1280px) {
+        width: 520px;
+      }
+      @media (min-width: 999px) and (max-width: 1180px) {
+        width: 520px;
+      }
     }
   }
 }

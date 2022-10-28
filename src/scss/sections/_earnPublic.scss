@@ -1,23 +1,26 @@
 @use "../functions" as *;
 
 .section--learn-first {
-  text-align: center;
+  max-width: 1181px;
+  margin: 80px auto;
 
   .section__title {
-    margin-inline: auto;
-    max-width: 45ch;
-    font-size: fluid-size(24px, 40px, 1440);
-    margin-bottom: 1.5em;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    color: #576b78;
+    margin-bottom: 40px;
   }
 
   .section__cta {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 16px;
 
     > img {
-      height: 5.5rem;
+      height: 169px;
       width: auto;
 
       @media screen and (max-width: 550px) {
@@ -27,14 +30,13 @@
   }
 
   .section__content {
-    margin-top: 3rem;
     text-align: left;
-    padding: calc(var(--section-padding) / 2);
     display: grid;
     grid-template-columns: auto 18rem;
-    gap: 2rem;
+    gap: 16px;
     align-items: center;
-    color: var(--white);
+    color: #2f4858;
+    padding: 55px 0 41px 57px;
     position: relative;
     isolation: isolate;
 
@@ -46,15 +48,18 @@
       img {
         order: -1;
         justify-self: center;
+        @media screen and (max-width: 768px) {
+          width: 300px;
+        }
       }
     }
 
     &::before {
       content: "";
       position: absolute;
-      border-radius: 1rem;
-      inset: 0 12vw 0 0;
-      background-color: var(--brand);
+      border-radius: 8px;
+      inset: 0 8vw 0 0;
+      background-color: #ffffff;
       z-index: -1;
 
       @media screen and (max-width: 768px) {
@@ -65,6 +70,7 @@
     ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
 
       li {
         display: flex;

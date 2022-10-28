@@ -1,0 +1,31 @@
+.purchaseVat__sectiion {
+  max-width: 1181px;
+  min-height: 246px;
+  margin: 0 auto 80px;
+  padding: 56px 75px 64px 85px;
+  background: #cfe6fd;
+  border-radius: 8px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 46px 24px;
+  }
+
+  .purchase_heading {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: #2f4858;
+    margin-bottom: 24px;
+  }
+  .purchase_about {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #2f4858;
+    opacity: 0.6;
+  }
+}
