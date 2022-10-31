@@ -12,6 +12,12 @@
     color: #2f4858;
     margin: 0 auto 56px;
 
+    @media (max-width: 768px) {
+      font-size: 28px;
+      line-height: 43px;
+      margin: 0 auto 40px;
+    }
+
     @media (max-width: 992px) {
       width: 100%;
     }
@@ -24,6 +30,10 @@
     gap: 50px;
     margin-bottom: 80px;
 
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+
     @media (min-width: 999px) {
       justify-content: space-between;
       gap: 24px;
@@ -32,6 +42,10 @@
     .cate_box {
       min-width: 160px;
       text-align: center;
+
+      @media (max-width: 768px) {
+        min-width: 100px;
+      }
 
       .cate_img {
         width: 160px;
@@ -44,9 +58,19 @@
         border-radius: 50%;
         margin-bottom: 16px;
 
+        @media (max-width: 768px) {
+          width: 100px;
+          height: 100px;
+        }
+
         .device_img {
           width: 64.7px;
           height: 64.7px;
+
+          @media (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+          }
         }
       }
       .devive_name {
@@ -54,6 +78,10 @@
         align-items: center;
         justify-content: center;
         gap: 8px;
+
+        @media (max-width: 768px) {
+          gap: 4px;
+        }
 
         .d_name {
           font-weight: 600;
@@ -63,6 +91,10 @@
           letter-spacing: 0.01em;
           color: #2f4858;
           margin: 0;
+
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
         }
         .right_arrow {
           width: 24px;
@@ -88,6 +120,11 @@
     line-height: 28px;
     color: #ffffff;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -95,6 +132,10 @@
   max-width: 1440px;
   margin: 107px auto 80px;
   padding: 0 74px;
+
+  @media (max-width: 768px) {
+    margin: 80px auto 40px;
+  }
 
   @media (max-width: 992px) {
     padding: 0;

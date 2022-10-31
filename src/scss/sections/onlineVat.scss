@@ -11,6 +11,9 @@
     margin-bottom: 41px;
     width: 853px;
 
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
     @media (max-width: 992px) {
       width: 100%;
     }
@@ -30,6 +33,10 @@
       border-bottom: 1px solid rgba(47, 72, 88, 0.5);
       padding: 37px 56px 25px;
 
+      @media (max-width: 768px) {
+        padding: 24px;
+      }
+
       .online_true_img {
         width: 28.47px;
         height: 35px;
@@ -42,6 +49,11 @@
         letter-spacing: 0.01em;
         color: #2f4858;
 
+        @media (max-width: 768px) {
+          font-size: 22px;
+          line-height: 32px;
+        }
+
         & span {
           color: #f15a22;
         }
@@ -53,6 +65,10 @@
       align-items: center;
       gap: 46px;
       padding: 32px 18.39px 56px 56px;
+
+      @media (max-width: 768px) {
+        padding: 32px 18.39px 32px 24px;
+      }
 
       @media (max-width: 999px) {
         flex-direction: column;
@@ -79,6 +95,10 @@
               font-size: 20px;
               line-height: 32px;
               color: #2f4858;
+
+              @media (max-width: 768px) {
+                font-size: 18px;
+              }
             }
 
             > span {

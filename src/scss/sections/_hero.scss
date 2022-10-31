@@ -17,30 +17,41 @@
   margin: 0 auto;
   padding: 50px 0 0;
 
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+
   .vat_main_container {
     width: 100%;
     height: 908px;
     // background: #cee8fe;
 
-    background-image: url("../images/vat-hero-bg-img.png");
+    background-image: url("../images/vat-hero-bg-img-2.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
     position: relative;
 
+    @media (max-width: 768px) {
+      height: auto;
+      padding-bottom: 215px;
+    }
+
     @media (min-width: 999px) and (max-width: 1180px) {
-      background-position: bottom;
+      background-position: -285px;
     }
 
     @media (max-width: 999px) {
       background-image: none;
       background: #cee8fe;
-      padding-right: 24px;
     }
 
     .vat_hero_content {
       width: 577px;
       margin: 191px 0 0 88px;
+      @media (min-width: 999px) and (max-width: 1180px) {
+        width: 465px;
+      }
 
       @media (min-width: 992px) and (max-width: 1280px) {
         margin: 191px 0 0 40px;
@@ -48,7 +59,8 @@
 
       @media (max-width: 768px) {
         width: 100%;
-        margin: 191px 0 0 24px;
+        margin: 80px 0 0;
+        padding: 0 24px;
       }
 
       .hero_heading {
@@ -60,8 +72,9 @@
         margin-bottom: 32px;
 
         @media (max-width: 768px) {
-          font-size: 38px;
-          line-height: 36px;
+          font-size: 28px;
+          line-height: 32px;
+          margin-bottom: 28px;
         }
       }
 
@@ -73,8 +86,8 @@
         color: #2f4858;
 
         @media (max-width: 768px) {
-          font-size: 38px;
-          line-height: 50px;
+          font-size: 28px;
+          line-height: 42px;
         }
       }
     }

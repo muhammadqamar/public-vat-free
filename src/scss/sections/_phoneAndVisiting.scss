@@ -2,6 +2,10 @@
   max-width: 1200px;
   margin: 0 auto 80px;
 
+  @media (max-width: 768px) {
+    margin: 0 auto 40px;
+  }
+
   .phone_box {
     display: flex;
     align-items: center;
@@ -28,6 +32,9 @@
         width: 100%;
         height: auto;
       }
+      @media (min-width: 999px) and (max-width: 1124px) {
+        width: 525px;
+      }
     }
 
     .visiting_img {
@@ -36,6 +43,9 @@
       @media (max-width: 999px) {
         width: 100%;
         height: auto;
+      }
+      @media (min-width: 999px) and (max-width: 1124px) {
+        width: 350px;
       }
     }
     .phone_content.one_about {
@@ -56,6 +66,10 @@
         padding: 38px 56px 24px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 
+        @media (max-width: 768px) {
+          padding: 24px;
+        }
+
         .true_img {
           width: 28.47px;
           height: 35px;
@@ -68,6 +82,11 @@
           letter-spacing: 0.01em;
           color: #2f4858;
           margin: 0;
+
+          @media (max-width: 768px) {
+            font-size: 22px;
+            line-height: 32px;
+          }
         }
       }
 
@@ -75,7 +94,7 @@
         padding: 32px 56px 96px;
 
         @media (max-width: 999px) {
-          padding: 32px;
+          padding: 24px;
         }
         .main_text {
           font-weight: 400;

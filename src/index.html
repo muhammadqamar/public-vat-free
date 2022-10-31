@@ -7,19 +7,21 @@
 
     <style>
       @import "./scss/style.scss";
-      @import "https://www.public.gr/styles.8a98d892fe6484c6.css";
+      /* @import "https://www.public.gr/styles.8a98d892fe6484c6.css"; */
     </style>
   </head>
   <body>
-    <div class="main_bg_color main_section">
+    <div class="main_bg_color">
       <include src="sections/hero.html"></include>
-      <include src="sections/findVat.html"></include>
-      <include src="sections/earnPublic.html"></include>
-      <include src="sections/purchaseVat.html"></include>
-      <include src="sections/onlineVat.html"></include>
-      <include src="sections/phoneAndVisiting.html"></include>
-      <include src="sections/fourCategories.html"></include>
-      <include src="sections/qna.html"></include>
+      <div class="main_section">
+        <include src="sections/findVat.html"></include>
+        <include src="sections/earnPublic.html"></include>
+        <include src="sections/purchaseVat.html"></include>
+        <include src="sections/onlineVat.html"></include>
+        <include src="sections/phoneAndVisiting.html"></include>
+        <include src="sections/fourCategories.html"></include>
+        <include src="sections/qna.html"></include>
+      </div>
     </div>
   </body>
 </html>

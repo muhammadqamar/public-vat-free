@@ -7,7 +7,8 @@
   background-color: #cee8fe;
 
   @media (max-width: 768px) {
-    padding: 50px 24px;
+    margin: 0 auto 80px;
+    padding: 40px 18px;
   }
 
   .section--qna {
@@ -16,6 +17,10 @@
     border-radius: 6px;
     padding: 40px;
 
+    @media (max-width: 768px) {
+      padding: 18px;
+    }
+
     .section__title {
       font-weight: 700;
       font-size: 40px;
@@ -23,6 +28,11 @@
       letter-spacing: 0.01em;
       color: rgba(47, 72, 88, 0.8);
       margin-bottom: 24px;
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+        line-height: 42px;
+      }
     }
 
     .qna {
