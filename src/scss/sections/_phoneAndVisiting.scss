@@ -3,7 +3,7 @@
   margin: 0 auto 80px;
 
   @media (max-width: 768px) {
-    margin: 0 auto 40px;
+    margin: 0 auto 48px;
   }
 
   .phone_box {
@@ -29,25 +29,41 @@
       object-fit: fill;
 
       @media (max-width: 999px) {
-        width: 100%;
-        height: auto;
+        display: none;
       }
       @media (min-width: 999px) and (max-width: 1124px) {
         width: 525px;
       }
     }
 
+    .phone_img_mobile {
+      width: 100%;
+      height: auto;
+      @media (min-width: 999px) {
+        display: none;
+      }
+    }
+
     .visiting_img {
       width: 532px;
       height: 314px;
+
       @media (max-width: 999px) {
-        width: 100%;
-        height: auto;
+        display: none;
       }
       @media (min-width: 999px) and (max-width: 1124px) {
         width: 350px;
       }
     }
+
+    .visiting_img_mobile {
+      width: 100%;
+      height: auto;
+      @media (min-width: 999px) {
+        display: none;
+      }
+    }
+
     .phone_content.one_about {
       min-height: 427px;
       @media (max-width: 999px) {
@@ -67,7 +83,7 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 
         @media (max-width: 768px) {
-          padding: 24px;
+          padding: 26px 24px;
         }
 
         .true_img {
@@ -84,8 +100,8 @@
           margin: 0;
 
           @media (max-width: 768px) {
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 25px;
           }
         }
       }
@@ -94,7 +110,7 @@
         padding: 32px 56px 96px;
 
         @media (max-width: 999px) {
-          padding: 24px;
+          padding: 20px 24px 32px;
         }
         .main_text {
           font-weight: 400;
@@ -102,6 +118,11 @@
           line-height: 37px;
           letter-spacing: 0.02em;
           color: #2f4858;
+
+          @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 29px;
+          }
 
           & span {
             color: #f15a22;

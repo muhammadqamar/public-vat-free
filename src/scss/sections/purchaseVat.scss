@@ -1,6 +1,5 @@
 .purchaseVat__sectiion {
   max-width: 1181px;
-  min-height: 246px;
   margin: 0 auto 80px;
   padding: 56px 75px 64px 85px;
   background: #cfe6fd;
@@ -8,8 +7,8 @@
   text-align: center;
 
   @media (max-width: 768px) {
-    margin: 0 auto 40px;
-    padding: 46px 24px;
+    margin: 48px auto;
+    padding: 24px 24px 32px;
   }
 
   .purchase_heading {
@@ -21,7 +20,9 @@
     margin-bottom: 24px;
 
     @media (max-width: 768px) {
-      font-size: 24px;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 8px;
     }
   }
   .purchase_about {
@@ -34,7 +35,8 @@
     opacity: 0.6;
 
     @media (max-width: 768px) {
-      font-size: 18px;
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }

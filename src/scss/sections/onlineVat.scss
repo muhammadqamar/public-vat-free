@@ -2,6 +2,10 @@
   max-width: 1200px;
   margin: 0 auto 40px;
 
+  @media (max-width: 768px) {
+    margin: 0 auto 48px;
+  }
+
   .online_vat_heading {
     font-weight: 700;
     font-size: 40px;
@@ -12,7 +16,9 @@
     width: 853px;
 
     @media (max-width: 768px) {
-      font-size: 28px;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 24px;
     }
     @media (max-width: 992px) {
       width: 100%;
@@ -34,7 +40,8 @@
       padding: 37px 56px 25px;
 
       @media (max-width: 768px) {
-        padding: 24px;
+        gap: 14.61px;
+        padding: 24px 24px 16px;
       }
 
       .online_true_img {
@@ -50,8 +57,8 @@
         color: #2f4858;
 
         @media (max-width: 768px) {
-          font-size: 22px;
-          line-height: 32px;
+          font-size: 20px;
+          line-height: 25px;
         }
 
         & span {
@@ -67,11 +74,12 @@
       padding: 32px 18.39px 56px 56px;
 
       @media (max-width: 768px) {
-        padding: 32px 18.39px 32px 24px;
+        padding: 17px 24px 32px;
+        gap: 16px;
       }
 
       @media (max-width: 999px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
       }
 
       .online_vat_list {
@@ -88,6 +96,10 @@
 
             + li {
               margin-top: 24px;
+
+              @media (max-width: 768px) {
+                margin-top: 19px;
+              }
             }
 
             > p {
@@ -97,7 +109,9 @@
               color: #2f4858;
 
               @media (max-width: 768px) {
-                font-size: 18px;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.03em;
               }
             }
 
