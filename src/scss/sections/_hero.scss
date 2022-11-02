@@ -101,20 +101,77 @@
           line-height: 33px;
         }
       }
+      .vat_hero_btn_desktop {
+        display: flex;
+        align-items: flex-start;
+        padding: 16px 24px;
+        max-width: 386px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #f15a22;
+        mix-blend-mode: normal;
+        margin-bottom: 32px;
+        background: #ffffff;
+        border: 2px solid #f15a22;
+        border-radius: 4px;
+
+        position: inherit;
+
+        @media (max-width: 992px) {
+          display: none;
+        }
+      }
     }
 
-    // vat logo
-    .vat_free_img {
-      width: 210.38px;
-      height: auto;
-      position: relative;
-      z-index: 2;
-      margin: 52px 0 0 64px;
+    .mobile_area {
+      display: flex;
+      gap: 8.92px;
 
       @media (max-width: 992px) {
-        width: 147px;
-        height: 84.51px;
-        margin: 41px 0 0 27px;
+        padding-right: 22px;
+      }
+
+      // vat logo
+      .vat_free_img {
+        width: 210.38px;
+        height: auto;
+        position: relative;
+        z-index: 2;
+        margin: 52px 0 0 64px;
+
+        @media (max-width: 992px) {
+          width: 147px;
+          height: 84.51px;
+          margin: 41px 0 0 33px;
+        }
+      }
+
+      .vat_hero_btn {
+        display: none;
+
+        @media (max-width: 992px) {
+          display: flex;
+          align-items: center;
+          padding: 16px 24px;
+          max-width: 386px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.01em;
+
+          color: #f15a22;
+          text-align: left;
+          mix-blend-mode: normal;
+          margin-top: 41px;
+          background: #ffffff;
+          border: 2px solid #f15a22;
+          border-radius: 4px;
+
+          position: relative;
+          z-index: 2;
+        }
       }
     }
 
