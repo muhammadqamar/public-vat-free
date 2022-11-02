@@ -52,7 +52,7 @@
 
     .vat_hero_content {
       width: 577px;
-      margin: 191px 0 0 88px;
+      margin: 93px 0 0 64px;
       position: relative;
       z-index: 1;
       @media (min-width: 999px) and (max-width: 1180px) {
@@ -60,12 +60,12 @@
       }
 
       @media (min-width: 992px) and (max-width: 1280px) {
-        margin: 191px 0 0 40px;
+        margin: 93px 0 0 40px;
       }
 
       @media (max-width: 992px) {
         width: 299px;
-        margin: 40.49px 0 0 24px;
+        margin: 45px 0 0 24px;
       }
 
       // @media (max-width: 768px) {
@@ -101,36 +101,17 @@
           line-height: 33px;
         }
       }
-      .vat_hero_btn_desktop {
-        display: flex;
-        align-items: flex-start;
-        padding: 16px 24px;
-        max-width: 386px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.01em;
-        color: #f15a22;
-        mix-blend-mode: normal;
-        margin-bottom: 32px;
-        background: #ffffff;
-        border: 2px solid #f15a22;
-        border-radius: 4px;
-
-        position: inherit;
-
-        @media (max-width: 992px) {
-          display: none;
-        }
-      }
     }
 
     .mobile_area {
       display: flex;
-      gap: 8.92px;
+      flex-direction: column;
+      gap: 18.5px;
 
       @media (max-width: 992px) {
+        gap: 8.92px;
         padding-right: 22px;
+        flex-direction: row;
       }
 
       // vat logo
@@ -149,28 +130,32 @@
       }
 
       .vat_hero_btn {
-        display: none;
+        display: flex;
+        align-items: flex-start;
+        padding: 16px 24px;
+        max-width: 252px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #f15a22;
+        mix-blend-mode: normal;
+        margin: 18.5px 0 0 64px;
+        text-align: left;
+        background: #ffffff;
+        border: 2px solid #f15a22;
+        border-radius: 4px;
+        position: relative;
+        z-index: 2;
 
         @media (max-width: 992px) {
-          display: flex;
-          align-items: center;
-          padding: 16px 24px;
-          max-width: 386px;
-          font-weight: 700;
+          margin: 41px 0 0;
+        }
+
+        @media (max-width: 768px) {
           font-size: 16px;
           line-height: 24px;
           letter-spacing: 0.01em;
-
-          color: #f15a22;
-          text-align: left;
-          mix-blend-mode: normal;
-          margin-top: 41px;
-          background: #ffffff;
-          border: 2px solid #f15a22;
-          border-radius: 4px;
-
-          position: relative;
-          z-index: 2;
         }
       }
     }
