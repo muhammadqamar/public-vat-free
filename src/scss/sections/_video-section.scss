@@ -1,0 +1,21 @@
+.video_section_main {
+  max-width: 1200px;
+  height: 668px;
+  margin: 0 auto 80px;
+
+  @media (max-width: 768px) {
+    margin: 0 auto 40px;
+    height: 206px;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    height: 451px;
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    height: 550px;
+  }
+
+  & iframe {
+    min-height: 100%;
+  }
+}

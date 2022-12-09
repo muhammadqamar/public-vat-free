@@ -1,6 +1,6 @@
 .purchaseVat__sectiion {
   max-width: 1181px;
-  margin: 0 auto 80px;
+  margin: 80px auto;
   padding: 56px 75px 64px 85px;
   background: #cfe6fd;
   border-radius: 8px;
@@ -37,6 +37,10 @@
     @media (max-width: 768px) {
       font-size: 14px;
       line-height: 20px;
+    }
+
+    & strong {
+      word-break: break-all;
     }
   }
 }

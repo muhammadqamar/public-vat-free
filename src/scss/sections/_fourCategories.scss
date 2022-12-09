@@ -28,7 +28,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin-bottom: 247px;
+    // margin-bottom: 247px;
 
     @media (min-width: 599px) and (max-width: 768px) {
       margin-bottom: 48px;
@@ -120,7 +120,7 @@
 
 .section_img_short {
   max-width: 1440px;
-  margin: 107px auto 80px;
+  margin: 80px auto;
   padding: 0 74px;
 
   @media (max-width: 768px) {

@@ -1,14 +1,18 @@
 .find__vat__section {
   max-width: 1200px;
-  min-height: 362px;
-  padding: 64px 144px 80px;
-  margin: -165px auto 0;
+  min-height: 295px;
+  padding: 32px 144px 44px;
+  margin: -150px auto 0;
   position: relative;
   z-index: 1;
   text-align: center;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
   border-radius: 8px;
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    margin: 0 auto 0;
+  }
 
   @media (max-width: 768px) {
     padding: 24px 24px 32px;
